@@ -46,7 +46,7 @@ namespace WpfTaskPlarium
         private void sortArray(int[]RandArr, int[] arr2)
         {
             int cnt = 0;
-
+            Array.Sort(RandArr);
             for (int i = 0; i < RandArr.Length; i++)
             {
                 if (((RandArr[i] % 2) == 0) && (RandArr[i] != 0))
@@ -75,6 +75,7 @@ namespace WpfTaskPlarium
                     cnt++;
                 }
             }
+
             foreach (int i in arr2)
             {
                 textBox2.Text += " " + i;
